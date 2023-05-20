@@ -59,7 +59,7 @@ input[type="checkbox"]:checked::after {
   backdrop-filter: blur(5px);
   position: fixed;
   width: 1220px;
-  padding: 10px 40px;
+  padding: 0px 40px;
 }
 
 .nav__logo {
@@ -81,6 +81,7 @@ input[type="checkbox"]:checked::after {
 
 .nav__list--item {
   font-size: 20px;
+  padding: 20px 0;
 }
 
 .nav__list--item-link {
@@ -90,13 +91,18 @@ input[type="checkbox"]:checked::after {
   color: #000000;
 }
 
-.nav__list--item-link:hover {
+.nav__list--item:hover a {
   transition: all 0.5s ease;
   color: blue;
   font-size: 21px;
 }
 .nav__list--item-link:hover .dropdown-menu{
   display: block;
+}
+
+.dropdown:hover .dropdown-menu{
+  display: block;
+  transition:all 3.5s ease;
 }
 
 .dropdown-menu {
@@ -126,9 +132,10 @@ input[type="checkbox"]:checked::after {
   color: #000000;
 }
 
-.dropdown:hover {
+.menu__list--item:hover {
   background-color: rgb(139, 139, 158);
   width: 100%;
 }
+
 
 
