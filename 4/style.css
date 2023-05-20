@@ -93,5 +93,42 @@ input[type="checkbox"]:checked::after {
 .nav__list--item-link:hover {
   transition: all 0.5s ease;
   color: blue;
-  font-size:21px ;
+  font-size: 21px;
 }
+.nav__list--item-link:hover .dropdown-menu{
+  display: block;
+}
+
+.dropdown-menu {
+  position: absolute;
+  background-color: aliceblue;
+  width: 150px;
+  height: auto;
+  margin-top: 14px;
+  margin-left: -35px;
+  padding: 0 10px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  display: none;
+  box-shadow: 0 0 10px grey;
+}
+
+
+.menu__list--item {
+  padding: 10px 0;
+  border-bottom: 2px solid grey;
+}
+
+.menu__list--item-link {
+  text-decoration: none;
+  font-family: sans-serif;
+  font-weight: 400;
+  color: #000000;
+}
+
+.dropdown:hover {
+  background-color: rgb(139, 139, 158);
+  width: 100%;
+}
+
+
